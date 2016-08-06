@@ -166,10 +166,10 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
+    \Large\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  \par
 }
 
 \renewcommand{\subsection}[2]{
@@ -193,11 +193,10 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[3]{%
-  \parbox[t]{15cm}{%
-    \begin{justify}{\begin{flushleft}#1\end{flushleft}\begin{flushright}#2}\end{justify}
-    \newline
-    \justify#3
-    \vspace{1mm}%
+  \parbox[t]{14.5cm}{%
+    \textbf{\emph{#1}} \textbf{\color{pblue}{#2}}%
+    \\
+    #3%
   }\\}
 
 
@@ -207,13 +206,13 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \RequirePackage[absolute,overlay]{textpos}
 \setlength{\TPHorizModule}{1cm}
-\setlength{\TPVertModule}{-1cm}
+\setlength{\TPVertModule}{-1.05cm}
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{pblue} ##1}
   }
-  \begin{textblock}{5}(0.5, 0.55)
+  \begin{textblock}{5}(0.55, 0.55)
   \begin{flushright}
   \obeycr
 }{%
