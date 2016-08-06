@@ -166,7 +166,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
-    \Large\headingfont\color{headercolor}%
+    \large\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
   \par
@@ -174,7 +174,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \renewcommand{\subsection}[2]{
   \par\vspace{.5\parskip}%
-  \Large\headingfont\color{headercolor} #2%
+  \large\headingfont\color{headercolor} #2%
   \par\vspace{.25\parskip}%
 }
 
@@ -206,11 +206,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \RequirePackage[absolute,overlay]{textpos}
 \setlength{\TPHorizModule}{1cm}
-\setlength{\TPVertModule}{-1.05cm}
+\setlength{\TPVertModule}{-1.2cm}
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{pblue} ##1}
+    \par\vspace{\baselineskip}{\large\headingfont\color{pblue} ##1}
   }
   \begin{textblock}{5}(0.55, 0.55)
   \begin{flushright}
