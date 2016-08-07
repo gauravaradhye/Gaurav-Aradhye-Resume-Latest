@@ -48,8 +48,9 @@
 }
 
 \addbibresource{bibliography.bib}
-\RequirePackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \definecolor{pblue}{HTML}{0395DE}
+\definecolor{myorange}{HTML}{F87217}
 
 \begin{document}
 \header{Gaurav}{Aradhye}
@@ -60,23 +61,26 @@
 
 % In the aside, each new line forces a line break
 \begin{aside}
-\vspace{30 mm} \leavevmode
+\vspace{28 mm} \leavevmode
   \section{Email}
     \textbf{gaurav@apache.org}
     ~
   \section{Github ID}
     \textbf{gauravaradhye}
     ~
+  \section{Website}
+    \textbf{gauravaradhye.github.io}
+    ~
   \section{Tel}
     +1 984-255-3707
     ~
   \section{Address}
-    2504 Avent Ferry, Apt 102
+    2504 Avent Ferry, Apt 201
     Raleigh, NC - 27606
     ~
   % use  \hspace{} or \vspace{} to change bubble size, if needed
   \section{Skillset}
-        \textbf{Python, Ruby, C, Java, C\#}
+        \textbf{Python, Ruby (Proficient),\\ C, Java (Intermediate),}
         Django, Ruby on Rails, \leavevmode
         Asp.net, PHP
         HTML, CSS, JS/jQuery (AngularJS)
@@ -95,7 +99,10 @@
         \emph{Persistent Systems}
 ~
 \end{aside}
+\leavevmode
+\vspace{3mm}
 \section{Education}
+\vspace{0.8mm}
 \begin{entrylist}
   \entry
     {M.S. Computer Science, 2015 - 2017 (Expected),}
@@ -144,10 +151,10 @@
     {SpotMe! Interactive 2D Game}
     {}
     {Designed an AI vs AI and Human vs AI Game using Processing Game Engine. Technology: Java\\}
-%    \entry
-%    {Employee Enagagement Platform - eMee}
-%    {}
-%    {Worked on front end and server side scripting. Technology used: % HTML, CSS, JavaScript, Asp.net, Microsoft SQL server.\\}
+    \entry
+    {Employee Enagagement Platform - eMee}
+    {}
+    {Worked on front end and server side scripting. Technology used: HTML, CSS, JavaScript, Asp.net, Microsoft SQL server.\\}
     \entry
     {Android Weather App}
     {Independent Project}

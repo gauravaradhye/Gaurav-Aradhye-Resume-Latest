@@ -111,7 +111,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2.5cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{20pt}{62pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
@@ -121,8 +121,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
       \bodyfont #3%
     };
   \end{tikzpicture}
-  \vspace{0.1cm}
-  \vspace{-2\parskip}
+  \vspace{-3\parskip}
 }
 
 
@@ -164,12 +163,12 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{-3.5mm}
   {%
     \large\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par
+  \par\vspace{-1mm}
 }
 
 \renewcommand{\subsection}[2]{
